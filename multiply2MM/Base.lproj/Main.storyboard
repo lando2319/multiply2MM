@@ -21,7 +21,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heU-ju-wAe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heU-ju-wAe">
                                 <rect key="frame" x="279" y="135" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -60,6 +60,7 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="0FF-vD-tUq" id="uf1-Ch-hT7"/>
+                        <outlet property="multiplerLabel" destination="heU-ju-wAe" id="5Wi-Nc-M52"/>
                         <outlet property="numberTextField" destination="ID1-DL-i3c" id="j9d-be-qb0"/>
                     </connections>
                 </viewController>

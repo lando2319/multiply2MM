@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *numberTextField;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *multiplerLabel;
 @end
 
 @implementation ViewController
@@ -29,6 +30,11 @@
     NSString *numberText = self.numberTextField.text;
     int intText = numberText.intValue;
     NSLog(@"%i", intText);
+
+    NSString *intMultiplerLabel = self.multiplerLabel.text;
+    int intMultiplerLabelActual = intMultiplerLabel.intValue;
+
+    NSLog(@"%i", intMultiplerLabelActual);
 
 }
 
