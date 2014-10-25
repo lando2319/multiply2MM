@@ -16,11 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ID1-DL-i3c">
-                                <rect key="frame" x="252" y="285" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heU-ju-wAe">
                                 <rect key="frame" x="279" y="135" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -45,6 +40,11 @@
                                     <action selector="onCalculateButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4wT-wb-mAz"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ID1-DL-i3c">
+                                <rect key="frame" x="108" y="285" width="385" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -52,7 +52,7 @@
                             <constraint firstAttribute="centerX" secondItem="7hW-Od-nKq" secondAttribute="centerX" id="I2l-ho-FjY"/>
                             <constraint firstItem="7hW-Od-nKq" firstAttribute="top" secondItem="ID1-DL-i3c" secondAttribute="bottom" constant="56" id="YSB-5m-kEj"/>
                             <constraint firstItem="ID1-DL-i3c" firstAttribute="top" secondItem="0FF-vD-tUq" secondAttribute="bottom" constant="76" id="dti-GU-dUb"/>
-                            <constraint firstAttribute="centerX" secondItem="ID1-DL-i3c" secondAttribute="centerX" id="izc-zq-YQr"/>
+                            <constraint firstAttribute="centerX" secondItem="ID1-DL-i3c" secondAttribute="centerX" constant="-0.5" id="izc-zq-YQr"/>
                             <constraint firstAttribute="centerX" secondItem="0FF-vD-tUq" secondAttribute="centerX" id="l3x-dN-hmR"/>
                             <constraint firstAttribute="centerX" secondItem="heU-ju-wAe" secondAttribute="centerX" id="vfL-JI-AOy"/>
                             <constraint firstItem="0FF-vD-tUq" firstAttribute="top" secondItem="heU-ju-wAe" secondAttribute="bottom" constant="32" id="yem-Lf-f46"/>

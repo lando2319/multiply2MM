@@ -36,6 +36,12 @@
 
     NSLog(@"%i", intMultiplerLabelActual);
 
+    int intFinalValueActual = intMultiplerLabelActual * intText;
+    NSLog(@"%i", intFinalValueActual);
+
+    NSString *intFinalValueActualString = [NSString stringWithFormat:@"%d", intFinalValueActual];
+
+    self.answerLabel.text = intFinalValueActualString;
 }
 
 @end
