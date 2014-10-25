@@ -72,6 +72,13 @@
                                     <action selector="tipSliderAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="zSK-QN-o0i"/>
                                 </connections>
                             </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2qq-hZ-yrt">
+                                <rect key="frame" x="239" y="335" width="123" height="29"/>
+                                <segments>
+                                    <segment title="*"/>
+                                    <segment title="/"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -88,7 +95,9 @@
                             <constraint firstItem="7hW-Od-nKq" firstAttribute="centerX" secondItem="heU-ju-wAe" secondAttribute="centerX" id="Wgm-uN-LFc"/>
                             <constraint firstItem="pj7-56-BP4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="197" id="atd-qx-ngp"/>
                             <constraint firstItem="0FF-vD-tUq" firstAttribute="leading" secondItem="ZbO-gh-8vC" secondAttribute="trailing" constant="16" id="k3r-eD-sNM"/>
+                            <constraint firstItem="7hW-Od-nKq" firstAttribute="top" secondItem="2qq-hZ-yrt" secondAttribute="bottom" constant="8" id="oGo-xx-3yj"/>
                             <constraint firstItem="7hW-Od-nKq" firstAttribute="top" secondItem="M9B-3O-mIf" secondAttribute="bottom" constant="48" id="pVz-NP-edR"/>
+                            <constraint firstAttribute="centerX" secondItem="2qq-hZ-yrt" secondAttribute="centerX" id="q6S-J7-s2L"/>
                             <constraint firstItem="Cgu-ig-zH1" firstAttribute="baseline" secondItem="0FF-vD-tUq" secondAttribute="baseline" id="yjz-71-8rD"/>
                         </constraints>
                     </view>
@@ -96,6 +105,7 @@
                         <outlet property="answerLabel" destination="0FF-vD-tUq" id="uf1-Ch-hT7"/>
                         <outlet property="multiplerLabel" destination="heU-ju-wAe" id="5Wi-Nc-M52"/>
                         <outlet property="numberTextField" destination="pj7-56-BP4" id="ujZ-lK-HT1"/>
+                        <outlet property="operatorSegmentConrol" destination="2qq-hZ-yrt" id="jF6-US-TsO"/>
                         <outlet property="tipSlider" destination="M9B-3O-mIf" id="Q0o-j0-tZp"/>
                     </connections>
                 </viewController>

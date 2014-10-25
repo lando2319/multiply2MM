@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
 @property (weak, nonatomic) IBOutlet UISlider *tipSlider;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *operatorSegmentConrol;
 @property (weak, nonatomic) IBOutlet UILabel *multiplerLabel;
 @end
 
@@ -27,12 +28,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)tipSliderAction:(id)sender {
-    NSString *tipAmountValue = [NSString stringWithFormat:@"%i", ((int)floorf(self.tipSlider.value))];
-    self.multiplerLabel.text = tipAmountValue;
-}
 
-- (IBAction)onCalculateButtonPressed:(id)sender {
+- (IBAction)onCalculateButtonPressed:(UIButton *)sender {
     NSString *numberText = self.numberTextField.text;
     int intText = numberText.intValue;
     NSLog(@"%i", intText);
@@ -42,7 +39,14 @@
 
     NSLog(@"%i", intMultiplerLabelActual);
 
-    int intFinalValueActual = intMultiplerLabelActual * intText;
+    int intFinalValueActual = 0;
+
+    if (self.operatorSegmentConrol.selectedSegmentIndex == 0) {
+        intFinalValueActual = intText * intMultiplerLabelActual;
+    } else {
+        intFinalValueActual = intText / intMultiplerLabelActual;
+    }
+
     NSLog(@"%i", intFinalValueActual);
 
     NSString *intFinalValueActualString = [NSString stringWithFormat:@"%d", intFinalValueActual];
@@ -62,6 +66,11 @@
         self.answerLabel.text = @"buzz";
     }
 
+}
+
+- (IBAction)tipSliderAction:(UISlider *)sender {
+    NSString *tipAmountValue = [NSString stringWithFormat:@"%i", ((int)floorf(self.tipSlider.value))];
+    self.multiplerLabel.text = tipAmountValue;
 }
 
 @end
