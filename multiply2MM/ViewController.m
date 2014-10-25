@@ -46,6 +46,25 @@
     if (intFinalValueActual > 20) {
         self.view.backgroundColor = [UIColor greenColor];
     }
+
+
+    if (intFinalValueActual % 3 == 0 && intFinalValueActual % 5 == 0) {
+        self.answerLabel.text = @"fizz buzz";
+    } else if (intFinalValueActual % 3 == 0) {
+        self.answerLabel.text = @"fizz";
+    } else if (intFinalValueActual % 5 == 0) {
+        self.answerLabel.text = @"buzz";
+    }
+
+
+
+
+
+
+
+
+
+
 }
 
 @end
