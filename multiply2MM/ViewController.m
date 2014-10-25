@@ -42,6 +42,10 @@
     NSString *intFinalValueActualString = [NSString stringWithFormat:@"%d", intFinalValueActual];
 
     self.answerLabel.text = intFinalValueActualString;
+
+    if (intFinalValueActual > 20) {
+        self.view.backgroundColor = [UIColor greenColor];
+    }
 }
 
 @end
