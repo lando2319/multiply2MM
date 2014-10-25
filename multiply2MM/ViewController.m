@@ -65,7 +65,7 @@
     } else if (intFinalValueActual % 5 == 0) {
         self.answerLabel.text = @"buzz";
     }
-
+    [self.view endEditing:YES];
 }
 
 - (IBAction)tipSliderAction:(UISlider *)sender {
