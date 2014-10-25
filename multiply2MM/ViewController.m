@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *numberTextField;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
+@property (weak, nonatomic) IBOutlet UISlider *tipSlider;
 @property (weak, nonatomic) IBOutlet UILabel *multiplerLabel;
 @end
 
@@ -26,6 +27,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)tipSliderAction:(id)sender {
+    NSString *tipAmountValue = [NSString stringWithFormat:@"%i", ((int)floorf(self.tipSlider.value))];
+    self.multiplerLabel.text = tipAmountValue;
+}
+
 - (IBAction)onCalculateButtonPressed:(id)sender {
     NSString *numberText = self.numberTextField.text;
     int intText = numberText.intValue;
@@ -55,15 +61,6 @@
     } else if (intFinalValueActual % 5 == 0) {
         self.answerLabel.text = @"buzz";
     }
-
-
-
-
-
-
-
-
-
 
 }
 
